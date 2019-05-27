@@ -1,5 +1,5 @@
 import axios from "axios";
-const API_URL = "http://localhost:8087/";
+const API_URL = "http://10.192.72.27:8087/";
 
 export class APIService {
   constructor() {}

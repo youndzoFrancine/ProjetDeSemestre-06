@@ -1,5 +1,6 @@
--- Insertion dans la classe Departement.
-\connect Forum
+
+-- Insertion dans la table departement. -----
+
 INSERT INTO departement(nom_departement)
 Values 
   ('HEG'),
@@ -15,37 +16,37 @@ Values
   ('Etudiant'),
   ('Assistant'),
   ('Professeur'),
-  ('Administrateur');
+  ('Administrateur'); 
 
 -- Insertion dans la table utilisateur. --------------------------------------
 
 INSERT INTO utilisateur(nom_utilisateur, mail_utilisateur, mot_de_passe, role_utilisateur)
 Values
-    /*md5('root1234') = e8bc632a8955b067e4f57824d5954690*/
-  ('Admin', 'admin.administrateur@heig-vd.ch', 'aabb2100033f0352fe7458e412495148', 4),
-    /*md5('bestpassword123454') = e8bc632a8955b067e4f57824d5954690*/
-  ('CrescenceK', 'crescence.yimnaingkamdem@heig-vd.ch', 'e8bc632a8955b067e4f57824d5954690', 1),
-  /*md5('fyk456') = 95577c3adb3cfa71d89d2d4e2eda96fd*/
-  ('youndzoFrancine', 'francine.youndzokengne@heig-vd.ch', '95577c3adb3cfa71d89d2d4e2eda96fd', 1),
-    /*md5('tpq789') = 0acf1488de10c0fce54f6aaaf39a303e*/
-  ('tiagoquin', 'tiago.povoaqui@heig-vd.ch', '0acf1488de10c0fce54f6aaaf39a303e', 1),
-  /*md5('cln123') = 865b501220e511a279efc515503c5ae1*/
-  ('cedriclankeu', '(cedric.lankeungassam@heig-vd.ch', '865b501220e511a279efc515503c5ae1', 1),
-    /*md5('agi456') = f7b057bc528e98dd80eac722296dd39f*/
-  ('AlexandreGabrielli', 'alexandre.gabrielli@heig-vd.ch', 'f7b057bc528e98dd80eac722296dd39f', 1),
-    /*md5('mcf789') = 80758752c5e07f13a5f9ca9e43eea251*/
-  ('Maxcaduff', 'max.caduff@heig-vd.ch', '80758752c5e07f13a5f9ca9e43eea251', 1),
-    /*md5('mcf789') = 80758752c5e07f13a5f9ca9e43eea251*/
-  ('grafolytics', 'marcel.graf@heig-vd.ch', '80758752c5e07f13a5f9ca9e43eea251', 3),
-    /*md5('cpa456') = 8670948c5a87999218c67b098ed43883*/
-  ('ci4cb', 'carlos.pena@heig-vd.ch', '8670948c5a87999218c67b098ed43883', 3),
-    /*md5('lionel') = 8670948c5a87999218c67b098ed43883*/
-  ('lionel', 'lionel.assistant@heig-vd.ch', '800a0e21225906fe82d141def1a9202d', 2),
-    /*md5('nicole') = fc63f87c08d505264caba37514cd0cfd*/
-  ('nicole', 'nicole.assistant@heig-vd.ch', 'fc63f87c08d505264caba37514cd0cfd', 2);
-
+    /*sha256('root1234') = "d41ca9b3ff93b24da439c32ab28c24fd03220fbee13d3c4650f20125172ae72d"*/
+  ('Admin', 'admin@heig-vd.ch', 'd41ca9b3ff93b24da439c32ab28c24fd03220fbee13d3c4650f20125172ae72d', 4),
+    /*sha256('aaaaaa') = "ed02457b5c41d964dbd2f2a609d63fe1bb7528dbe55e1abf5b52c249cd735797"*/
+  ('CrescenceK', 'crescence.yimnaingkamdem@heig-vd.ch', 'ed02457b5c41d964dbd2f2a609d63fe1bb7528dbe55e1abf5b52c249cd735797', 1),
+  /* sha256('aaaaaa') */
+  ('youndzoFrancine', 'francine.youndzokengne@heig-vd.ch', 'ed02457b5c41d964dbd2f2a609d63fe1bb7528dbe55e1abf5b52c249cd735797', 1),
+    /* sha256('aaaaaa') */
+  ('tiagoquin', 'tiago.povoaqui@heig-vd.ch', 'ed02457b5c41d964dbd2f2a609d63fe1bb7528dbe55e1abf5b52c249cd735797', 1),
+  /* sha256('aaaaaa') */
+  ('cedriclankeu', 'cedric.lankeungassam@heig-vd.ch', 'ed02457b5c41d964dbd2f2a609d63fe1bb7528dbe55e1abf5b52c249cd735797', 1),
+    /* sha256('aaaaaa') */
+  ('AlexandreGabrielli', 'alexandre.gabrielli@heig-vd.ch', 'ed02457b5c41d964dbd2f2a609d63fe1bb7528dbe55e1abf5b52c249cd735797', 1),
+    /* sha256('aaaaaa') */
+  ('Maxcaduff', 'max.caduff@heig-vd.ch', 'ed02457b5c41d964dbd2f2a609d63fe1bb7528dbe55e1abf5b52c249cd735797', 1),
+    /* sha256('bbbbbb') = "4625fd63b0e96fc0d656ae7381605e48d4a0f63a319fc743adf22688613883c7"*/
+  ('grafolytics', 'marcel.graf@heig-vd.ch', '4625fd63b0e96fc0d656ae7381605e48d4a0f63a319fc743adf22688613883c7', 3),
+    /* sha256('bbbbbb') */
+  ('ci4cb', 'carlos.pena@heig-vd.ch', '4625fd63b0e96fc0d656ae7381605e48d4a0f63a319fc743adf22688613883c7', 3),
+    /* sha256('bbbbbb') */
+  ('lionel', 'lionel.assistant@heig-vd.ch', '4625fd63b0e96fc0d656ae7381605e48d4a0f63a319fc743adf22688613883c7', 2),
+    /* sha256('bbbbbb') */
+  ('nicole', 'nicole.assistant@heig-vd.ch', '4625fd63b0e96fc0d656ae7381605e48d4a0f63a319fc743adf22688613883c7', 2);  
+  
  -- Insertion dans la table appartient. -------------------------------------------
-
+ 
 INSERT INTO appartient(departement_id, utilisateur_id)
 values
 	(1,2),
@@ -63,16 +64,14 @@ values
 
 -- Insertion dans la table tag. -----------------------------------------------------------------------------
 
-INSERT INTO tag (nom, prioritaire, rang)
-values
+INSERT INTO tag (nom, prioritaire, rang) 
+values 
 	('debian', true, 6),
 	('assembleur',true,4),
 	('numeristaion', false, 6),
-	('signaux',false,1),
 	('systeme',true,10),
 	('gen',false,7),
 	('scapy',false,9),
-	('cpp' ,true,1),
 	('netbeans' ,true,7),
 	('postgresql',true,9),
 	('nodejs',false,8),
@@ -85,7 +84,7 @@ values
 	('pro',true,5),
 	('poo1',false,2),
 	('poo2',false,5),
-	('aro1^',false,7),
+	('aro1',false,7),
 	('aro2',true,8),
 	('info',false,8),
 	('labo',false,2),
@@ -102,8 +101,6 @@ values
 	('numerique',true,6),
 	('inf1',true,1),
 	('inf2',true,3),
-	('inf01',true,9),
-	('info2',true,4),
 	('progoo',false,9),
 	('economie',false,5),
 	('c++',false,5),
@@ -114,7 +111,7 @@ values
 	('vscode',true,6),
 	('socket',true,9),
 	('trigger',false,6),
-	('proccedure',false,5);
+	('procedure',false,5);
 
 -- Insertion dans la table message, (message racine )-------------------------------.
 
@@ -122,7 +119,7 @@ values
  VALUES
 	('2018/10/06 13:45:55', 'J ai un problème lorsque je veux lire des données de la base de données PostgreSQL Author et écrire dans la base de données de livres PostgreSQL. Je crée des configurations pour les deux bases de données et cela fonctionne bien. Mon problème est dans ItemReader. Voici mon erreur: Une erreur s est produite lors de l exécution de l étape ETL-file-load dans le travail ETL-Load error: exception java.lang.IllegalArgumentException: org.hibernate.hql.internal.ast.QuerySyntaxException: l auteur n est pas mappé [sélectionnez id, prénom, nom de famille de l auteur]', 0, 6),
 	('2018/09/02 09:35:51', 'Je pensais que toute action provoquerait l appel des fonctions mapState par react-redux-connect mais lorsqu une action ne change rien, ce n est pas le cas. J ai un module localStorage qui distribue des actions mais ne change pas d état, mais il écrira à localStorage. Le module comporte des sélecteurs utilisés dans les conteneurs, mais ils ne seront pas appelés tant que l état n aura pas été modifié. L interface utilisateur s affichera correctement après l envoi d une autre action modifiant l état. Problème : Lorsque je mets le magasin sur window (window.store = store), ajoute un console.log dans le mapStateToProps, puis dans la console, je dépose une action: store.dispatch ({type: une action}), puis sur la console. journal de la mapStateToProps ne montre pas.', 0, 3),
-
+	
 	('2018/11/26 15:05:01', 'J aimerais créer des actions d événement pour avertir les autres classes lorsqu un événement survient. internal class Third{public event Action Updated;public Third(){if(Updated != null)}}', 0, 5),
 	('2019/04/26 15:00:01', 'I am working on doing some statistical analysis in python however I am new to the field and have been stuck on an error.For background, I am computing a set of sample_means for each sample size, 200 times. I am then calculating the mean and standard deviation for each sample size, which are then stored in arrays. This is my code: in[] = sample_sizes = np.arange(1,1001,1) number_of_samples = 200 mean_of_sample_means = [] std_dev_of_sample_means = [] for x in range (number_of_samples): mean_of_sample_means.append(np.mean(sample_sizes)) std_dev_of_sample_means.append(np.std(sample_sizes)) in[] = # mean and std of 200 means from 200 replications, each of size 10 trials[0], mean_of_sample_means[0], std_dev_of_sample_means[0] out[] = (10, 500.5, 288.67499025720952) ', 0, 3),
 	('2019/02/18 19:00:01', 'Bonjour, est-ce que la VM est la même que celle utilisée pour SYE et ASM au premier semestre?', 0, 3),
@@ -145,8 +142,8 @@ values
 
 -- Insertion dans la table discussion. -------------------------------
 
-INSERT INTO discussion (sujet, msgracine_id, utilisateur_id)
-values
+INSERT INTO discussion (sujet, msgracine_id, utilisateur_id) 
+values 
 	('Problème avec le lecteur Spring Batch de PostgreSQL DB1 pour écrire dans PostgreSQL DB2', 1, 6),
 	('redux connect mapStateToProps n est appelé lors de la distribution de laction', 2, 3),
 	('Initialiser les actions d événement pour générer des notifications d événement', 3, 5),
@@ -172,8 +169,8 @@ values
 
 -- Insertion dans la table message (réponse aux messages racine). ------------------------
 
-INSERT INTO message (date_creation, contenu, score, utilisateur_id, super_message_id)
-values
+INSERT INTO message (date_creation, contenu, score, utilisateur_id, super_message_id) 
+values 
 	('2018/10/06 13:55:50', 'Assure toi de fournir le bon type d arguments.', 0, 6, 1),
     ('2018/10/07 07:15:05', 'Fais voir ton code', 0, 3, 1),
     ('2018/03/09 10:41:33', 'Votre exemple codepen fonctionne très bien, il vous suffit de déclencher une action qui dépasse de votre niveau le plus bas et qui est conforme à la structure attendue, afin de ne générer aucune erreur de suivi: Publiez-le dans la console de votre code: store.dispatch ({emittedBy: "COUNTER", tapez: "COUNTER -> AUGMENTER", id: "counter1", charge utile: {type: "INCREASE", id: ["counter1" ]}})', 0, 4, 2),
@@ -184,9 +181,9 @@ values
     ('2019/02/19 09:00:01', 'Bonjour non.La version 2019_02 est une mise à jour de la précédente avec Qt Creator installé et pré-configuré pour les labos.', 0, 10, 5),
     ('2018/04/09 18:35:01', 'Bonjour, pareil pour moi. J ai zappé la feuille en sortant du cours hier alors que j étais présent.', 0, 9, 6),
     ('2018/04/09 19:15:01', 'ok, pas de soucis je corrige', 0, 1, 6),
-    ('2018/09/20 12:05:51', 'Le problème est très probablement que vous êtes en mode "Release" dans Qt Creator au lieu du mode "Debug". Je ne connais pas la source du problème, mais on pourrait suspecter que certaines options d optimisation à la compilation ont un effet sur le comportement du programme.', 0, 6, 7),
-    ('2018/09/20 10:41:33', 'En effet plus les instructions seront rapides a faire le travail moins il y aura de risque de contention - mais cela ne veut pas dire que les problemes ne vont pas apparaitre. Il est aussi interessant d observer combien de coeurs sont utilises: plus le parallelisme sera important, plus les risques d acces concurrents à la memoire seront éléves', 0, 8, 7),
-    ('2018/05/16 13:05:51', 'Attention, sauf erreur l attribut `counter` est stockée dans un `unsigned long`. Il ne faut donc pas que le produit nbThread*nbIncrementation soit plus grand que ULONG_MAX (probablement 4294967295 sur votre machine http://www.cplusplus.com/reference/climits/)', 0, 4, 8),
+    ('2018/09/20 12:05:51', 'Le problème est très probablement que vous êtes en mode "Release" dans Qt Creator au lieu du mode "Debug". Je ne connais pas la source du problème, mais on pourrait suspecter que certaines options d optimisation à la compilation ont un effet sur le comportement du programme.', 0, 6, 7), 
+    ('2018/09/20 10:41:33', 'En effet plus les instructions seront rapides a faire le travail moins il y aura de risque de contention - mais cela ne veut pas dire que les problemes ne vont pas apparaitre. Il est aussi interessant d observer combien de coeurs sont utilises: plus le parallelisme sera important, plus les risques d acces concurrents à la memoire seront éléves', 0, 8, 7), 
+    ('2018/05/16 13:05:51', 'Attention, sauf erreur l attribut `counter` est stockée dans un `unsigned long`. Il ne faut donc pas que le produit nbThread*nbIncrementation soit plus grand que ULONG_MAX (probablement 4294967295 sur votre machine http://www.cplusplus.com/reference/climits/)', 0, 4, 8), 
     ('2018/09/12 16:41:33', 'utiliser la libraire <atomic> bonne idée, les operations atomiques sont effectivement interessantes et permettent de la synchonisation sans bloquer les thread ce qui peut etre tres performant dans certaines situtations, a classer un peu dans la meme "famille" que les algorithmes d exclusion mutuels que nous allons commencer a regarder. Qt a meme des operations atomiques (https://doc.qt.io/archives/qt-4.8/qatomicint.html). Mais nous n allons pas les aborder directement pendant le cours, cependant libre a vous de les essayer', 0, 2, 8),
     ('2018/07/09 16:41:33', 'Bonjour,Nous vous demandons seulement de ne pas créer de nouveau fichier dans le projet Qt du labo comme indiqué dans la donnée. Justifiez vos choix d implémentation en commentaire et dans le Readme.', 0, 8, 10),
     ('2018/11/8 13:45:51', 'c est du json malformé vous n envoyez pas un tableau de musiciens (entre [ ])', 0, 1, 11),
@@ -198,7 +195,7 @@ values
     ('2018/06/10 11:55:00', 'Victoire, merci pour votre grande aide, et désolé pour ça, je ne suis pas encore à l aise avec NodeJS.', 0, 2, 12),
     ('2018/12/29 14:05:01', 'Moi j ai fait ça. Des Sleep de 5 secondes et ça marche pico bello', 0, 1, 13),
     ('2018/12/29 14:07:01', 'Entre chaque groupe ou entre chaque RCPT TO?', 0, 4, 13),
-    ('2018/12/29 14:17:31', 'Entre chaque rcp to', 0, 1, 13),
+    ('2018/12/29 14:17:31', 'Entre chaque rcp to', 0, 1, 13), 
     ('2018/08/27 09:40:51', 'Tu dois spécifier le main qu il doit exécuter. Perso j avais ce soucis, le plus simple, c est de te baser sur le pom.xml du labo javaIO précédent. Tu verras qu il spécifie le main (ou la classe). Après tu recompiles et ça devrait être ok', 0, 8, 14),
     ('2018/08/27 10:02:51', 'Merci beaucoup ça marche du tonnerre', 0, 3, 14),
     ('2019/05/16 17:05:01', ' C est à cause des \n vs \r\n: sur linux (ou mac), netcat va envoyer par défaut des \n, ce qui viole le rfc. Vous pouvez passer un flag en démarrant netcat pour lui dire de faire le contraire. -c sur mac os', 0, 11, 15),
@@ -224,11 +221,11 @@ values
     ('2019/04/27 09:04:09', 'Oui c est celui que j avais essayé en effet.', 0, 4, 21),
     ('2019/04/27 09:07:19', 'Notez que c est peut-être EDUROAM qui bloque le trafic (de la même manière qu un ISP comme swisscom reroute le trafic TCP/25 sur le serveur SMTP pour lutter contre le spam) en effet: https://community.jisc.ac.uk/library/janet-services-documentation/implementing-eduroam-roadmap-part-2', 0, 2, 21),
     ('2019/04/27 09:1:49', 'Okay, merci!', 0, 4, 21);
-
+ 
 -- Insertion dans la table message (réponse aux réponses des messages racines). ------------------------
 
-INSERT INTO message (date_creation, contenu, score, utilisateur_id, super_message_id)
- values
+INSERT INTO message (date_creation, contenu, score, utilisateur_id, super_message_id) 
+ values 	
 	('2018/06/09 15:35:41', '@Override public Book process(Author item) throws Exception { Book book = newBook();book.setName(item.getFirstname());return book;}', 0, 9, 52),
 	('2019/02/26 07:17:00', 'J ai bien respecté les types', 0, 11, 51),
     ('2018/06/09 16:27:11', 'Ca marche merci', 0, 2, 53),
@@ -236,7 +233,7 @@ INSERT INTO message (date_creation, contenu, score, utilisateur_id, super_messag
     ('2019/12/03 16:09:25', 'Parfait merci bien ! ', 0, 4, 58),
     ('2019/04/26 15:04:01', 'Dac! ca marche.', 0, 7, 65);
 
-
+	
 -- Insertion dans la table message_family -------------------------
 
 INSERT INTO  message_Family(message_parent , message_fils)
@@ -291,7 +288,7 @@ VALUES
 	(21,69),
 	(21,70),
 	(21,71),
-	-- reponse de reponse
+	-- reponse de reponse 
 	(52,72),
 	(51,73),
 	(53,74),
@@ -300,9 +297,9 @@ VALUES
 	(65,77);
 
 -- Insertion dans la table vote -------------------------
-
-	INSERT INTO vote (utilisateur_id, message_id, up_vote)
-values
+	
+	INSERT INTO vote (utilisateur_id, message_id, up_vote) 
+values 
 	(9, 43, true),
 	(3, 51, true),
 	(5, 60, false),
@@ -483,3 +480,86 @@ values
 	(8, 75, true),
 	(10, 39, false),
 	(11, 30, true);
+
+ -- Insertion dans la table est_liÉ. -------------------------------------------
+ 
+INSERT INTO est_lier(discussion_id, tag_id)
+values
+	(1,2),
+	(1,21),
+	(1,12),
+	(1,35),
+	(1,27),
+	(1,13),
+	(2,45),
+	(2,5),
+	(2,12),
+	(2,25),
+	(2,34),
+	(2,15),
+	(3,27),
+	(3,17),
+	(3,15),
+	(3,35),
+	(3,5),
+	(3,10),
+	(3,12),
+	(3,7),
+	(4,15),
+	(4,26),
+	(4,8),
+	(5,9),
+	(5,10),
+	(5,5),
+	(6,12),
+	(6,17),
+	(6,35),
+	(6,42),
+	(7,15),
+	(8,43),
+	(9,45),
+	(9,36),
+	(10,15),
+	(10,26),
+	(10,25),
+	(10,36),
+	(11,42),
+	(11,22),
+	(11,17),
+	(11,35),
+	(11,37),
+	(11,23),
+	(12,43),
+	(12,42),
+	(12,12),
+	(12,32),
+	(12,38),
+	(12,13),
+	(13,44),
+	(13,33),
+	(13,22),
+	(13,11),
+	(13,1),
+	(13,30),
+	(13,10),
+	(13,20),
+	(14,14),
+	(14,44),
+	(14,28),
+	(15,19),
+	(15,10),
+	(15,45),
+	(16,42),
+	(16,1),
+	(16,12),
+	(16,41),
+	(17,5),
+	(18,37),
+	(19,31),
+	(19,39),
+	(20,2),
+	(20,29),
+	(20,31),
+	(20,26);
+
+

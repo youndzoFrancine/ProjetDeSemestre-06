@@ -2,7 +2,7 @@
 
 const state = {
 
-  apiUrl: "http://localhost:8087/",
+  apiUrl: "http://10.192.72.27:8087/",
   
   displErrMsg: false,
   errorMessage: "",
